@@ -1,0 +1,104 @@
+.header {
+    width: 1358px;
+    height: 256px;
+
+    .backgroundImage {
+        background-image: url('../assets/img/Background.png');
+        height: 192px;
+    }
+
+    .Menu {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        width: 1024px;
+        left: 10.5rem;
+        top: -4rem;
+
+        .avatar {
+            margin-left: 2rem;
+            width: 128px;
+            height: 128px;
+            z-index: 1000;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 1.25rem;
+        }
+
+        .btnsBlock {
+            margin-bottom: 0.25rem;
+            position: absolute;
+            right: 1rem;
+            .envelope{
+                display: inline-block;
+                position: absolute;
+                top: 0.95rem;
+                left: 1rem;
+            }
+            .phone {
+                display: inline-block;
+                position: absolute;
+                top: 0.795rem;
+                right: 4rem;
+            }
+    
+        }
+    }
+}
+@media screen and (min-width: 360px) and (max-width: 500px ) {
+    .header {
+        min-width: 375px;
+        max-width: 500px;
+    
+        .backgroundImage {
+            background-image: url('../assets/img/Background.png');
+            height: 192px;
+        }
+    
+        .Menu {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            min-width: 375px;
+            max-width: 500px;
+            left: 10.5rem;
+            top: -4rem;
+    
+            .avatar {
+                margin-left: -10rem;
+                width: 128px;
+                height: 128px;
+                z-index: 1000;
+            }
+    
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+                margin-left: -1.25rem;
+            }
+    
+            .btnsBlock {
+                min-width: 250px;
+                margin-bottom: -4rem;
+                position: absolute;
+                right: 25rem;
+                .envelope{
+                    display: inline-block;
+                    position: absolute;
+                    top: 0.95rem;
+                    left: 1rem;
+                }
+                .phone {
+                    display: inline-block;
+                    position: absolute;
+                    top: 0.795rem;
+                    right: 6rem;
+                }
+        
+            }
+        }
+    }
+}

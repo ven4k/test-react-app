@@ -1,0 +1,58 @@
+.main{
+    margin-top: 5.75rem;
+    width: 1358px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 2rem;
+    margin-bottom: 3.125rem;
+
+        img{
+            border-radius: 0.5rem;
+        }
+        img:hover{
+            outline: 0.25rem solid red;
+            cursor: pointer;
+        }
+        .items{  
+            align-self: center;
+            justify-self: center;
+        }
+        .itemId{
+            margin-top: 0.5rem;
+            font-weight: 500;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+        }
+    }
+    @media screen and (min-width: 360px) and (max-width: 500px ) {
+        .main{
+            margin-top: 7rem;
+            min-width: 375px;
+            max-width: 500px;
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 2rem;
+            margin-bottom: 3.125rem;
+        
+                img{
+                    border-radius: 0.5rem;
+                }
+                img:hover{
+                    outline: 0.25rem solid red;
+                    cursor: pointer;
+                }
+                .items{
+                    margin-left: 0.65rem;
+                    align-self: start;
+                    justify-self: start;
+                }
+                .itemId{
+                    margin-top: 0.5rem;
+                    font-weight: 500;
+                    font-size: 0.875rem;
+                    line-height: 1.25rem;
+                }
+            }
+      }
