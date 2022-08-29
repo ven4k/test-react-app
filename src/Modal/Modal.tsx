@@ -10,7 +10,7 @@ interface ModalProps {
 }
 const modalRootElement = document.querySelector('#modal');
 export const Modal: FC<ModalProps> = ({ onClose, isOpen = false, currentId}) => {
-    const element = useMemo(() => document.createElement('div'), []);
+    const element = document.createElement('div')
     const [singleItem, setSingleItem] = useState<any>({});
     const [comment, setComment] = useState<string>('');
     useEffect(() => {
@@ -31,6 +31,7 @@ export const Modal: FC<ModalProps> = ({ onClose, isOpen = false, currentId}) => 
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         setComment(e.target.value)
     }
+
     const commentPost = {
         id: Math.floor(Math.random( ) * (1000+1)),
         date: Date.now(),
