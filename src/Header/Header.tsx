@@ -19,7 +19,6 @@ export const Header: FC = () => {
                     <Button onClick={fakeClick}><img className={styles.envelope} src={envelope} alt='envelope icon'/>Message</Button>
                     <Button onClick={fakeClick}><img className={styles.phone} src={phone} alt='phone icon' />Call</Button>                        
                 </div>
-
             </div>
         </header>
     )
