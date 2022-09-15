@@ -1,4 +1,4 @@
-import { FC, useEffect, useMemo, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import closeIcon from '../assets/svg/CloseIcon.svg';
 import styles from './Modal.module.scss';
